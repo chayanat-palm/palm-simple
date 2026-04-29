@@ -1,0 +1,42 @@
+/* Import JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Light Theme (default) */
+  --primary-pink: #d81b60;
+  --bg-color: #FFF0F5;
+  --text-color: #333;
+  --font-family: 'JetBrains Mono', monospace;
+}
+
+[data-theme='dark'] {
+  --primary-pink: #FF80AB;
+  --bg-color: #2e0018;
+  --text-color: #fce4ec;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: var(--primary-pink);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary-pink);
+}
